@@ -59,7 +59,8 @@ int main(int argc, char* argv[]){
 
     vector<string> a;
 
-    a = solution();
+    // 메인함수 구현 필요
+    //a = solution();
 
     return 0;
 }
