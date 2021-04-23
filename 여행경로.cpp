@@ -58,9 +58,36 @@ vector<string> solution(vector<vector<string>> tickets) {
 int main(int argc, char* argv[]){
 
     vector<string> a;
+    vector<vector<string>> input_data;
 
-    // fix it
-    //a = solution();
 
+
+
+    a.push_back("ICN");
+    a.push_back("JFK");
+
+    input_data.push_back(a);
+    a.clear();
+
+    a.push_back("HND");
+    a.push_back("IAD");
+
+    input_data.push_back(a);
+    a.clear();
+
+    a.push_back("JFK");
+    a.push_back("HND");
+
+    input_data.push_back(a);
+    a.clear();
+
+    a = solution(input_data);
+
+    vector<string>::iterator iter;
+
+    for (iter = a.begin(); iter != a.end(); iter++) {
+        cout << *iter << " -> ";
+    }
+    
     return 0;
 }
